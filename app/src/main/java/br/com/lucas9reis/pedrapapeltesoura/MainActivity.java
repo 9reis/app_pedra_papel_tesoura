@@ -3,6 +3,7 @@ package br.com.lucas9reis.pedrapapeltesoura;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,4 +12,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    public void selecionadoPedra(View view ){
+        this.opcaoSelecionada("pedra");
+    }
+    public void selecionadoPapel(View view ){
+        this.opcaoSelecionada("papel");
+    }
+    public void selecionadoTesoura(View view ){
+        this.opcaoSelecionada("tesoura");
+    }
+
+    public void opcaoSelecionada(String opcaoSelecionada ){
+
+    }
+
 }
